@@ -1,15 +1,17 @@
 #play fizzbuzz
 
 def fizzbuzz(int)
-  if int (% 3 == 0) $$ int (% 5 == 0)
-    puts "FizzBuzz"
+  if int % 3 == 0 && int % 5 == 0
+    return "FizzBuzz"
+  else
+    return "nil"
   end
   
-  if int (% 5 == 0) 
-    puts "Buzz"
+  if int % 5 == 0 
+    return "Buzz"
   end
 
-  if int (% 3 == 0) 
+  if int % 3 == 0 
     puts "Fizz"
   end
 end
